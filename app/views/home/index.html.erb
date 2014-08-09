@@ -1,0 +1,10 @@
+<h1>Привет это главная страница</h1>
+
+<% if user_signed_in? %>
+	Ты можешь зайти в свой: <%= link_to 'профайл', home_profile_path %>
+<% else %>
+	<%= link_to 'Зарегистрироваться', new_user_registration_path %><br >
+	<%= link_to 'войти', new_user_session_path %>
+
+<% end %>
+

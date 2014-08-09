@@ -1,0 +1,7 @@
+<h1>Это твой профайл!</h1>  
+
+Это твой email: <strong><%= current_user.email %></strong>
+
+Нажми <%= link_to 'выйти', destroy_user_session_path, method: :delete %>
+
+<h3><%= link_to 'главная', root_path %></h3>	
